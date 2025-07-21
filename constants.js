@@ -115,8 +115,8 @@ export const experiences = [
     img: newtonschoolLogo,
     role: "Frontend Intern",
     company: "Newton School",
-    date: "September 2021 - August 2022",
-    desc: "Worked as a Frontend Developer Intern, designing and implementing scalable UI components and responsive websites using HTML, CSS, JavaScript, Bootstrap, and Material UI. Collaborated with the design team to translate wireframes and prototypes from Figma into interactive, user-friendly web pages.",
+    date: "March 2025 - June 2025",
+    desc: "Worked as a Frontend Developer Intern, building and deploying responsive web applications using React.js, JavaScript, HTML, and CSS. Gained hands-on experience in component-based architecture, API integration, and version control with Git and GitHub. Collaborated on real-world projects, focusing on clean UI design and functional user experiences",
     skills: [
       "HTML",
       "CSS",
