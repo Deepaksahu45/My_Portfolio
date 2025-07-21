@@ -44,9 +44,8 @@ import oxfLogo from './assets/education_logo/oxford_logo.jpg'
 // Project Section Logo's
 import githubdetLogo from './assets/work_logo/github_det.png';
 import movierecLogo from './assets/work_logo/movie_rec.png';
-import webverLogo from './assets/work_logo/web_dig.png';
 import currency from './assets/work_logo/Currency.png'
-import note from './assets/work_logo/NotesApp.png'
+import noteslogo from './assets/work_logo/noteapp.png'
 import weather from './assets/work_logo/WeatherApp.png'
 import imagesearchLogo from './assets/work_logo/image_search.png';
 
@@ -195,7 +194,7 @@ export const projects = [
     title: "NotesApp with Firebase",
     description:
       "A React-based Notes App integrated with Firebase for real-time data storage and retrieval. Users can create, edit, and delete notes securely, with changes instantly saved to the cloud — perfect for quick personal note-taking on any device.",
-    image: note,
+    image: noteslogo,
     tags: ["React JS", "API", "HTML", "CSS", "JavaScript", "Firebase"],
     github: "https://github.com/Deepaksahu45/NotesApp.git",
     webapp: "https://notes-app-zeta-lac.vercel.app",
