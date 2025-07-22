@@ -114,9 +114,9 @@ export const experiences = [
     id: 2,
     img: newtonschoolLogo,
     role: "Frontend Intern",
-    company: "Newton School",
-    date: "March 2025 - June 2025",
-    desc: "Worked as a Frontend Developer Intern, building and deploying responsive web applications using React.js, JavaScript, HTML, and CSS. Gained hands-on experience in component-based architecture, API integration, and version control with Git and GitHub. Collaborated on real-world projects, focusing on clean UI design and functional user experiences",
+    company: "Ezy Ev Technologies",
+    date: "Feb 2025 - April 2025",
+    desc: "Built responsive UI components using React and Tailwind for a web platform focused on electric vehicle services. Tasks included reusable card components, layout structuring, bug fixing, and version control using GitHub.",
     skills: [
       "HTML",
       "CSS",
