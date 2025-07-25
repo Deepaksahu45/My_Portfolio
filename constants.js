@@ -35,6 +35,7 @@ import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
 import newtonschoolLogo from './assets/company_logo/newtonschool_logo.jpg';
+import upto from './assets/company_logo/uptoskill.jpg'
 
 // Education Section Logo's
 import baitlogo from './assets/education_logo/bait_logo.jpg';
@@ -110,6 +111,26 @@ export const SkillsInfo = [
 
 export const experiences = [
 
+  {
+    id: 1,
+    img: upto,
+    role: "Fullstack Devp Intern",
+    company: "UptoSkills",
+    date: "Jul 2025 - Oct 2025",
+    desc: "Developed full stack web features using React, Tailwind CSS, Node.js, and MongoDB. Responsibilities included dynamic UI creation, REST API integration, database operations, performance optimization, and collaborative version control using GitHub.",
+    skills: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React.js",
+      "Tailwind css",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Git&Github",
+      "API",
+    ],
+  },
   {
     id: 2,
     img: newtonschoolLogo,
