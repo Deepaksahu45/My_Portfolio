@@ -187,7 +187,7 @@ export const projects = [
     description:
       "Intellichat AI is a responsive React-based chatbot application that answers user queries using AI. It features recent search history, dynamic conversation display, and an intuitive interface, delivering a seamless and engaging user experience.",
     image: intellichat,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
+    tags: ["React JS", "Gemini API", "HTML", "CSS", "JavaScript"],
     github: "https://github.com/Deepaksahu45/Intellichat-Ai.git",
     webapp: "https://intellichat-ai-sigma.vercel.app",
   },
