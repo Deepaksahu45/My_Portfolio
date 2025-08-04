@@ -50,6 +50,7 @@ import noteslogo from './assets/work_logo/noteapp.png'
 import weather from './assets/work_logo/WeatherApp.png'
 import imagesearchLogo from './assets/work_logo/image_search.png';
 import intellichat from './assets/work_logo/chat.png'
+import ecommerce from './assets/work_logo/e-commerce.png'
 
 
 
@@ -193,6 +194,16 @@ export const projects = [
   },
   {
     id: 1,
+    title: "ElectroShop e-commerce",
+    description:
+      "ElectroShop is a responsive React-based e-commerce website offering a wide range of electronics with secure payments, worldwide shipping, smooth user experience, product filtering, and persistent shopping cart functionality",
+    image: ecommerce,
+    tags: ["React JS", "HTML", "CSS", "JavaScript"],
+    github: "https://github.com/Deepaksahu45/Electroshop-e-commerce.git",
+    webapp: "https://electroshop-e-commerce.vercel.app",
+  },
+  {
+    id: 2,
     title: "Movie Recommendation App",
     description:
       "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
@@ -202,7 +213,7 @@ export const projects = [
     webapp: "https://movie-app-eta-sooty.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "GitHub Profile Detective",
     description:
       "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
@@ -212,7 +223,7 @@ export const projects = [
     webapp: "https://github-search-xi-ten.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "Currency-Converter",
     description:
       "A React-based web application that allows users to convert currencies in real-time using live exchange rates. The clean interface and quick results make it a handy tool for travelers, traders, and anyone dealing with multiple currencies.",
@@ -222,7 +233,7 @@ export const projects = [
     webapp: "https://currency-converter-seven-rosy.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     title: "NotesApp with Firebase",
     description:
       "A React-based Notes App integrated with Firebase for real-time data storage and retrieval. Users can create, edit, and delete notes securely, with changes instantly saved to the cloud — perfect for quick personal note-taking on any device.",
@@ -231,15 +242,6 @@ export const projects = [
     github: "https://github.com/Deepaksahu45/NotesApp.git",
     webapp: "https://notes-app-zeta-lac.vercel.app",
   },
-  {
-    id: 5,
-    title: "Real Time Weather app",
-    description:
-      "A real-time Weather App built with React that fetches live weather data using an API. Users can search for any city to instantly view current temperature, conditions, and location details — ideal for checking weather updates on the go.",
-    image: weather,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Deepaksahu45/WeatherApp.git",
-    webapp: "https://weather-app-eta-nine-44.vercel.app",
-  },
+
 
 ];  
