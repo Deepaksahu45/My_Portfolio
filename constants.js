@@ -60,10 +60,8 @@ export const SkillsInfo = [
     skills: [
       { name: 'HTML', logo: htmlLogo },
       { name: 'CSS', logo: cssLogo },
-      { name: 'SASS', logo: sassLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
-      { name: 'Angular', logo: angularLogo },
       { name: 'Redux', logo: reduxLogo },
       { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
@@ -133,22 +131,7 @@ export const experiences = [
       "API",
     ],
   },
-  {
-    id: 2,
-    img: newtonschoolLogo,
-    role: "Frontend Intern",
-    company: "Ezy Ev Technologies",
-    date: "Feb 2025 - April 2025",
-    desc: "Built responsive UI components using React and Tailwind for a web platform focused on electric vehicle services. Tasks included reusable card components, layout structuring, bug fixing, and version control using GitHub.",
-    skills: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React.js",
-      "Tailwind css",
-      "API",
-    ],
-  },
+
 ];
 
 export const education = [
