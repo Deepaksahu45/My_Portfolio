@@ -25,3 +25,18 @@ html {
     clip-path: polygon(0 0, 100% 0, 100% 98%, 75% 96%, 0 100%);
   }
 }
+
+.dark-theme {
+  background-color: #050414;
+  color: #d1d5db;
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: black;
+}
+
+.dark-theme,
+.light-theme {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}

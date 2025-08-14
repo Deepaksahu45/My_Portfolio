@@ -1,26 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // importing icon from react icons
+import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, darkMode }) => {
   const [activeSection, setActiveSection] = useState("");
   const [isOpen, setisOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detect scroll and change navbar background
+  // Detect scroll
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, []);
 
-  //   smooth scroll function
+  // Smooth scroll
   const handleItemClick = (sectionId) => {
     setActiveSection(sectionId);
     setisOpen(false);
-
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
@@ -37,25 +36,24 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw]   ${
+      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          ? "bg-white/70 dark:bg-[#050414]/70 backdrop-blur-md shadow-md"
           : "bg-transparent"
       }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
-        {/* this div are written for my name log */}
-        <div className=" text-lg  font-semibold cursor-pointer ">
+      <div className="py-5 flex justify-between items-center text-black dark:text-white">
+        {/* Logo */}
+        <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Deepak</span>
+          <span>Deepak</span>
           <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Sahu</span>
+          <span>Sahu</span>
           <span className="text-[#8245ec]">&gt;</span>
-          {/* this lines are written for this <> this   */}
         </div>
 
-        {/* desktop menu  */}
-        <ul className="hidden md:flex space-x-8 text-gray-300 ">
+        {/* Desktop menu */}
+        <ul className="hidden md:flex space-x-8 text-gray-700 dark:text-gray-300">
           {menuItems.map((item) => (
             <li
               key={item.id}
@@ -69,31 +67,38 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        {/* social media icons add */}
-        <div className="hidden md:flex gap-5  ">
+
+        {/* Social icons + theme toggle */}
+        <div className="hidden md:flex gap-5 items-center text-gray-700 dark:text-gray-300">
           <a
             href="https://github.com/Deepaksahu45"
             target="_blank"
-            rel="nopener norefferer"
-            className="text-grey-300 hover:text-[#8245ec]"
+            rel="noreferrer"
+            className="hover:text-[#8245ec]"
           >
             <FaGithub size={24} />
           </a>
           <a
-            href="https://github.com/Deepaksahu45"
+            href="https://linkedin.com/in/Deepaksahu45"
             target="_blank"
-            rel="nopener norefferer"
-            className="text-grey-300 hover:text-[#8245ec]"
+            rel="noreferrer"
+            className="hover:text-[#8245ec]"
           >
             <FaLinkedin size={24} />
           </a>
+          <button
+            onClick={toggleTheme}
+            className="px-3 py-1 border rounded-md hover:bg-[#8245ec] transition-colors"
+          >
+            {darkMode ? "🌞" : "🌙"}
+          </button>
         </div>
 
-        {/* mobile menu icons  */}
-        <div className="md:hidden ">
+        {/* Mobile menu icon */}
+        <div className="md:hidden">
           {isOpen ? (
             <FiX
-              className=" text-3xl text-[#8245ec] cursor-pointer"
+              className="text-3xl text-[#8245ec] cursor-pointer"
               onClick={() => setisOpen(false)}
             />
           ) : (
@@ -104,14 +109,14 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Mobile Menu items  */}
+        {/* Mobile menu */}
         {isOpen && (
-          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-            <ul className="flex flex-col items-center space-y-4 py-5 text-gray-300">
+          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-white/80 dark:bg-[#050414]/80 backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+            <ul className="flex flex-col items-center space-y-4 py-5 text-gray-700 dark:text-gray-300">
               {menuItems.map((item) => (
                 <li
                   key={item.id}
-                  className={`cursor-pointer hover:text-white ${
+                  className={`cursor-pointer hover:text-[#8245ec] ${
                     activeSection === item.id ? "text-[#8245ec]" : ""
                   }`}
                 >
@@ -120,23 +125,31 @@ const Navbar = () => {
                   </button>
                 </li>
               ))}
-              <div className="flex space-x-4 ">
+
+              {/* Social icons */}
+              <div className="flex space-x-4">
                 <a
                   href="https://github.com/Deepaksahu45"
                   target="_blank"
-                  rel="nopener norefferer"
-                  className="text-grey-300 hover:text-white"
+                  rel="noreferrer"
+                  className="hover:text-[#8245ec]"
                 >
                   <FaGithub size={24} />
                 </a>
                 <a
-                  href="https://github.com/Deepaksahu45"
+                  href="https://linkedin.com/in/Deepaksahu45"
                   target="_blank"
-                  rel="nopener norefferer"
-                  className="text-grey-300 hover:text-white"
+                  rel="noreferrer"
+                  className="hover:text-[#8245ec]"
                 >
                   <FaLinkedin size={24} />
                 </a>
+                <button
+                  onClick={toggleTheme}
+                  className="px-3 py-1 border rounded-md hover:bg-[#8245ec] transition-colors"
+                >
+                  {darkMode ? "🌞" : "🌙"}
+                </button>
               </div>
             </ul>
           </div>

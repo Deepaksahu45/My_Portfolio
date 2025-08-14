@@ -5,13 +5,16 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans 
+                 bg-skills-gradient dark:bg-[#050414] clip-path-custom-3"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          EDUCATION
+        </h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg font-semibold">
           My education has been a journey of learning and development. Here are
           the details of my academic background
         </p>
@@ -20,7 +23,10 @@ const Education = () => {
       {/* Education Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div>
+        <div
+          className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 
+                        sm:-translate-x-0 w-1 bg-gray-200 dark:bg-gray-700 h-full"
+        ></div>
 
         {/* Education Entries */}
         {education.map((edu, index) => (
@@ -31,7 +37,12 @@ const Education = () => {
             }`}
           >
             {/* Timeline Circle */}
-            <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div
+              className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 
+                            bg-gray-300 dark:bg-gray-400 border-4 border-[#8245ec] 
+                            w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center 
+                            items-center z-10 overflow-hidden"
+            >
               <img
                 src={edu.img}
                 alt={edu.school}
@@ -41,14 +52,20 @@ const Education = () => {
 
             {/* Content Section */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-25 sm:mr-0" : "sm:mr-25 sm:ml-0"
-              }  ml-8 transform transition-transform duration-300 hover:scale-105`}
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl 
+                          border border-gray-200 dark:border-white/10 
+                          bg-white/70 dark:bg-white/5 backdrop-blur-md 
+                          shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] 
+                          ${
+                            index % 2 === 0
+                              ? "sm:ml-25 sm:mr-0"
+                              : "sm:mr-25 sm:ml-0"
+                          } ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
                 {/* School Logo/Image */}
-                <div className="w-24 h-16 bg-white rounded-md overflow-hidden">
+                <div className="w-24 h-16 bg-gray-100 dark:bg-gray-800 rounded-md overflow-hidden">
                   <img
                     src={edu.img}
                     alt={edu.school}
@@ -59,20 +76,28 @@ const Education = () => {
                 {/* Degree, School Name, and Date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-xl font-semibold text-white">
+                    <h3 className="text-xl sm:text-xl font-semibold text-gray-900 dark:text-white">
                       {edu.degree}
                     </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
+                    <h4 className="text-md sm:text-sm text-gray-700 dark:text-gray-300">
                       {edu.school}
                     </h4>
                   </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{edu.date}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+                    {edu.date}
+                  </p>
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400 font-bold">Grade: {edu.grade}</p>
-              <p className="mt-4 text-gray-400">{edu.desc}</p>
+              {/* Grade */}
+              <p className="mt-4 text-gray-700 dark:text-gray-400 font-bold">
+                Grade: {edu.grade}
+              </p>
+
+              {/* Description */}
+              <p className="mt-4 text-gray-700 dark:text-gray-400">
+                {edu.desc}
+              </p>
             </div>
           </div>
         ))}

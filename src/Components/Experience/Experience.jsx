@@ -5,23 +5,23 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans 
+                 bg-skills-gradient dark:bg-[#050414] clip-path-custom-2"
     >
-      {/* Section title  */}
-      <div className="text-center mb-16 ">
-        <h2 className="text-4xl font-bold text-white">EXPERIENCE</h2>
-        <div className="w-32 h-1 bg-[#8245ec] mx-auto mt-4 "></div>
-        <p className="text-gray-400 mt-4 text-xl font-semibold">
+      {/* Section title */}
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          EXPERIENCE
+        </h2>
+        <div className="w-32 h-1 bg-[#8245ec] mx-auto mt-4"></div>
+        <p className="text-gray-600 dark:text-gray-400 mt-4 text-xl font-semibold">
           A collection of my work experience and the roles I have taken in
           various organizations
         </p>
       </div>
 
-      {/* Experince timeline  */}
-      <div className="relative flex justify-center items-center  ">
-        {/* Vertical line */}
-        {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 bg-white h-full"></div> */}
-        {/* Experience Entries */}
+      {/* Experience timeline */}
+      <div className="relative flex justify-center items-center">
         {experiences.map((experience, index) => (
           <div
             key={experience.id}
@@ -29,23 +29,22 @@ const Experience = () => {
               index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
             }`}
           >
-            {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
-              <img
-                src={experience.img}
-                alt={experience.company}
-                className="w-full h-full object-cover rounded-full"
-              />
-            </div> */}
-            {/* Contact Section */}
+            {/* Experience card */}
             <div
-              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl border border-white bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] ${
-                index % 2 === 0 ? "sm:ml-25 sm:mr-0" : "sm:mr-25 sm:ml-0"
-              } ml-8 transform transition-transform duration-300 hover:scale-105`}
+              className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl 
+                          border border-gray-200 dark:border-white/10 
+                          bg-white/70 dark:bg-white/5 backdrop-blur-md 
+                          shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] 
+                          ${
+                            index % 2 === 0
+                              ? "sm:ml-25 sm:mr-0"
+                              : "sm:mr-25 sm:ml-0"
+                          } ml-8 transform transition-transform duration-300 hover:scale-105`}
             >
-              {/* Flex container for image and text */}
+              {/* Header with logo + info */}
               <div className="flex items-center space-x-6">
-                {/* Company Logo/Image */}
-                <div className="w-16 h-16 bg-white rounded-md overflow-hidden">
+                {/* Logo */}
+                <div className="w-16 h-16 bg-gray-100 dark:bg-gray-800 rounded-md overflow-hidden">
                   <img
                     src={experience.img}
                     alt={experience.company}
@@ -53,31 +52,38 @@ const Experience = () => {
                   />
                 </div>
 
-                {/* Role, Company Name, and Date */}
+                {/* Role, company, date */}
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-semibold text-white">
+                    <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">
                       {experience.role}
                     </h3>
-                    <h4 className="text-md sm:text-sm text-gray-300">
+                    <h4 className="text-md sm:text-sm text-gray-700 dark:text-gray-300">
                       {experience.company}
                     </h4>
                   </div>
-                  {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
                     {experience.date}
                   </p>
                 </div>
               </div>
 
-              <p className="mt-4 text-gray-400">{experience.desc}</p>
+              {/* Description */}
+              <p className="mt-4 text-gray-700 dark:text-gray-400">
+                {experience.desc}
+              </p>
+
+              {/* Skills */}
               <div className="mt-4">
-                <h5 className="font-medium text-white">Skills:</h5>
+                <h5 className="font-medium text-gray-900 dark:text-white">
+                  Skills:
+                </h5>
                 <ul className="flex flex-wrap mt-2">
                   {experience.skills.map((skill, index) => (
                     <li
                       key={index}
-                      className="bg-[#8245ec] text-gray-300 px-4 py-1 text-xs sm:text-sm rounded-lg mr-2 mb-2 border border-gray-400"
+                      className="bg-[#8245ec] text-white px-4 py-1 
+                                 text-xs sm:text-sm rounded-lg mr-2 mb-2"
                     >
                       {skill}
                     </li>
