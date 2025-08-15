@@ -39,7 +39,7 @@ function App() {
         {/* Main content container */}
         <div className="bg-white text-black dark:bg-[#050414] dark:text-gray-300 transition-colors duration-300">
           <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
-          <div className="pt-20"></div>
+          <div className="pt-1"></div>
           <About />
           <Skills />
           <Experience />
