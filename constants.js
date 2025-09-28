@@ -1,116 +1,114 @@
 // Skills Section Logo's
-import htmlLogo from './assets/tech_logo/html.png';
-import cssLogo from './assets/tech_logo/css.png';
-import sassLogo from './assets/tech_logo/sass.png';
-import javascriptLogo from './assets/tech_logo/javascript.png';
-import reactjsLogo from './assets/tech_logo/reactjs.png';
-import angularLogo from './assets/tech_logo/angular.png';
-import reduxLogo from './assets/tech_logo/redux.png';
-import nextjsLogo from './assets/tech_logo/nextjs.png';
-import tailwindcssLogo from './assets/tech_logo/tailwindcss.png';
-import gsapLogo from './assets/tech_logo/gsap.png';
-import materialuiLogo from './assets/tech_logo/materialui.png';
-import bootstrapLogo from './assets/tech_logo/bootstrap.png';
-import springbootLogo from './assets/tech_logo/springboot.png';
-import nodejsLogo from './assets/tech_logo/nodejs.png';
-import expressjsLogo from './assets/tech_logo/express.png';
-import mysqlLogo from './assets/tech_logo/mysql.png';
-import mongodbLogo from './assets/tech_logo/mongodb.png';
-import firebaseLogo from './assets/tech_logo/firebase.png';
-import cLogo from './assets/tech_logo/c.png';
-import cppLogo from './assets/tech_logo/cpp.png';
-import javaLogo from './assets/tech_logo/java.png';
-import pythonLogo from './assets/tech_logo/python.png';
-import typescriptLogo from './assets/tech_logo/typescript.png';
-import gitLogo from './assets/tech_logo/git.png';
-import githubLogo from './assets/tech_logo/github.png';
-import vscodeLogo from './assets/tech_logo/vscode.png';
-import postmanLogo from './assets/tech_logo/postman.png';
-import mcLogo from './assets/tech_logo/mc.png';
-import figmaLogo from './assets/tech_logo/figma.png';
-import netlifyLogo from './assets/tech_logo/netlify.png';
-import vercelLogo from './assets/tech_logo/vercel.png';
-import postgreLogo from './assets/tech_logo/postgre.png';
-import csharpLogo from './assets/tech_logo/csharp.png';
+import htmlLogo from "./assets/tech_logo/html.png";
+import cssLogo from "./assets/tech_logo/css.png";
+import sassLogo from "./assets/tech_logo/sass.png";
+import javascriptLogo from "./assets/tech_logo/javascript.png";
+import reactjsLogo from "./assets/tech_logo/reactjs.png";
+import angularLogo from "./assets/tech_logo/angular.png";
+import reduxLogo from "./assets/tech_logo/redux.png";
+import nextjsLogo from "./assets/tech_logo/nextjs.png";
+import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
+import gsapLogo from "./assets/tech_logo/gsap.png";
+import materialuiLogo from "./assets/tech_logo/materialui.png";
+import bootstrapLogo from "./assets/tech_logo/bootstrap.png";
+import springbootLogo from "./assets/tech_logo/springboot.png";
+import nodejsLogo from "./assets/tech_logo/nodejs.png";
+import expressjsLogo from "./assets/tech_logo/express.png";
+import mysqlLogo from "./assets/tech_logo/mysql.png";
+import mongodbLogo from "./assets/tech_logo/mongodb.png";
+import firebaseLogo from "./assets/tech_logo/firebase.png";
+import cLogo from "./assets/tech_logo/c.png";
+import cppLogo from "./assets/tech_logo/cpp.png";
+import javaLogo from "./assets/tech_logo/java.png";
+import pythonLogo from "./assets/tech_logo/python.png";
+import typescriptLogo from "./assets/tech_logo/typescript.png";
+import gitLogo from "./assets/tech_logo/git.png";
+import githubLogo from "./assets/tech_logo/github.png";
+import vscodeLogo from "./assets/tech_logo/vscode.png";
+import postmanLogo from "./assets/tech_logo/postman.png";
+import mcLogo from "./assets/tech_logo/mc.png";
+import figmaLogo from "./assets/tech_logo/figma.png";
+import netlifyLogo from "./assets/tech_logo/netlify.png";
+import vercelLogo from "./assets/tech_logo/vercel.png";
+import postgreLogo from "./assets/tech_logo/postgre.png";
+import csharpLogo from "./assets/tech_logo/csharp.png";
 
 // Experience Section Logo's
-import newtonschoolLogo from './assets/company_logo/newtonschool_logo.jpg';
-import upto from './assets/company_logo/uptoskill.jpg'
+import newtonschoolLogo from "./assets/company_logo/newtonschool_logo.jpg";
+import upto from "./assets/company_logo/uptoskill.jpg";
 
 // Education Section Logo's
-import baitlogo from './assets/education_logo/bait_logo.jpg';
-import polylogo from './assets/education_logo/poly_logo.jpg';
-import oxfLogo from './assets/education_logo/oxford_logo.jpg'
+import baitlogo from "./assets/education_logo/bait_logo.jpg";
+import polylogo from "./assets/education_logo/poly_logo.jpg";
+import oxfLogo from "./assets/education_logo/oxford_logo.jpg";
 
 // Project Section Logo's
-import githubdetLogo from './assets/work_logo/github_det.png';
-import movierecLogo from './assets/work_logo/movie_rec.png';
-import currency from './assets/work_logo/Currency.png'
-import noteslogo from './assets/work_logo/noteapp.png'
-import weather from './assets/work_logo/WeatherApp.png'
-import imagesearchLogo from './assets/work_logo/image_search.png';
-import intellichat from './assets/work_logo/chat.png'
-import ecommerce from './assets/work_logo/e-commerce.png'
-
-
+import finance from "./assets/work_logo/finance.png";
+import githubdetLogo from "./assets/work_logo/github_det.png";
+import movierecLogo from "./assets/work_logo/movie_rec.png";
+import currency from "./assets/work_logo/Currency.png";
+import noteslogo from "./assets/work_logo/noteapp.png";
+import weather from "./assets/work_logo/WeatherApp.png";
+import imagesearchLogo from "./assets/work_logo/image_search.png";
+import intellichat from "./assets/work_logo/chat.png";
+import ecommerce from "./assets/work_logo/e-commerce.png";
 
 export const SkillsInfo = [
   {
-    title: 'Frontend',
+    title: "Frontend",
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'React JS', logo: reactjsLogo },
-      { name: 'Redux', logo: reduxLogo },
-      { name: 'Next JS', logo: nextjsLogo },
-      { name: 'Tailwind CSS', logo: tailwindcssLogo },
-      { name: 'GSAP', logo: gsapLogo },
-      { name: 'Material UI', logo: materialuiLogo },
-      { name: 'Bootstrap', logo: bootstrapLogo },
+      { name: "HTML", logo: htmlLogo },
+      { name: "CSS", logo: cssLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "React JS", logo: reactjsLogo },
+      { name: "Redux", logo: reduxLogo },
+      { name: "Next JS", logo: nextjsLogo },
+      { name: "Tailwind CSS", logo: tailwindcssLogo },
+      { name: "GSAP", logo: gsapLogo },
+      { name: "Material UI", logo: materialuiLogo },
+      { name: "Bootstrap", logo: bootstrapLogo },
     ],
   },
   {
-    title: 'Backend',
+    title: "Backend",
     skills: [
-      { name: 'Springboot', logo: springbootLogo },
-      { name: 'Node JS', logo: nodejsLogo },
-      { name: 'Express JS', logo: expressjsLogo },
-      { name: 'MySQL', logo: mysqlLogo },
-      { name: 'MongoDB', logo: mongodbLogo },
-      { name: 'Firebase', logo: firebaseLogo },
-      { name: 'PostgreSQL', logo: postgreLogo },
+      { name: "Springboot", logo: springbootLogo },
+      { name: "Node JS", logo: nodejsLogo },
+      { name: "Express JS", logo: expressjsLogo },
+      { name: "MySQL", logo: mysqlLogo },
+      { name: "MongoDB", logo: mongodbLogo },
+      { name: "Firebase", logo: firebaseLogo },
+      { name: "PostgreSQL", logo: postgreLogo },
     ],
   },
   {
-    title: 'Languages',
+    title: "Languages",
     skills: [
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
-      { name: 'Java', logo: javaLogo },
-      { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
-      { name: 'JavaScript', logo: javascriptLogo },
-      { name: 'TypeScript', logo: typescriptLogo },
+      { name: "C", logo: cLogo },
+      { name: "C++", logo: cppLogo },
+      { name: "Java", logo: javaLogo },
+      { name: "Python", logo: pythonLogo },
+      { name: "C-Sharp", logo: csharpLogo },
+      { name: "JavaScript", logo: javascriptLogo },
+      { name: "TypeScript", logo: typescriptLogo },
     ],
   },
   {
-    title: 'Tools',
+    title: "Tools",
     skills: [
-      { name: 'Git', logo: gitLogo },
-      { name: 'GitHub', logo: githubLogo },
-      { name: 'VS Code', logo: vscodeLogo },
-      { name: 'Postman', logo: postmanLogo },
-      { name: 'Compass', logo: mcLogo },
-      { name: 'Vercel', logo: vercelLogo },
-      { name: 'Netlify', logo: netlifyLogo },
-      { name: 'Figma', logo: figmaLogo },
+      { name: "Git", logo: gitLogo },
+      { name: "GitHub", logo: githubLogo },
+      { name: "VS Code", logo: vscodeLogo },
+      { name: "Postman", logo: postmanLogo },
+      { name: "Compass", logo: mcLogo },
+      { name: "Vercel", logo: vercelLogo },
+      { name: "Netlify", logo: netlifyLogo },
+      { name: "Figma", logo: figmaLogo },
     ],
   },
 ];
 
 export const experiences = [
-
   {
     id: 1,
     img: upto,
@@ -131,7 +129,6 @@ export const experiences = [
       "API",
     ],
   },
-
 ];
 
 export const education = [
@@ -167,6 +164,25 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Ai-Personal-Finance-Manager",
+    description:
+      "A Next.js-based web application that allows users to manage their finances effectively. It provides features like expense tracking, budget planning, and financial goal setting, all within a user-friendly interface.",
+    image: finance,
+    tags: [
+      "Next.js",
+      "React JS",
+      "API",
+      "JavaScript",
+      "Tailwind CSS",
+      "Supabase",
+      "Clerk auth",
+      "Prisma",
+    ],
+    github: "https://github.com/Deepaksahu45/Ai-Personal-Finance-Manager.git",
+    webapp: "https://finaura-zeta.vercel.app",
+  },
+  {
+    id: 1,
     title: "Intellichat Ai",
     description:
       "Intellichat AI is a responsive React-based chatbot application that answers user queries using AI. It features recent search history, dynamic conversation display, and an intuitive interface, delivering a seamless and engaging user experience.",
@@ -176,7 +192,7 @@ export const projects = [
     webapp: "https://intellichat-ai-sigma.vercel.app",
   },
   {
-    id: 1,
+    id: 2,
     title: "ElectroShop e-commerce",
     description:
       "ElectroShop is a responsive React-based e-commerce website offering a wide range of electronics with secure payments, worldwide shipping, smooth user experience, product filtering, and persistent shopping cart functionality",
@@ -186,7 +202,7 @@ export const projects = [
     webapp: "https://electroshop-e-commerce.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Movie Recommendation App",
     description:
       "A React-based web application that provides movie recommendations based on different criteria, such as genres, user preferences, and popular trends. The intuitive design and smooth experience make it a go-to app for movie enthusiasts.",
@@ -196,7 +212,7 @@ export const projects = [
     webapp: "https://movie-app-eta-sooty.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     title: "GitHub Profile Detective",
     description:
       "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
@@ -204,16 +220,6 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript", "React JS", "API"],
     github: "https://github.com/Deepaksahu45/github-search.git",
     webapp: "https://github-search-xi-ten.vercel.app",
-  },
-  {
-    id: 4,
-    title: "Currency-Converter",
-    description:
-      "A React-based web application that allows users to convert currencies in real-time using live exchange rates. The clean interface and quick results make it a handy tool for travelers, traders, and anyone dealing with multiple currencies.",
-    image: currency,
-    tags: ["React JS", "API", "HTML", "CSS", "JavaScript"],
-    github: "https://github.com/Deepaksahu45/CurrencyConverter.git",
-    webapp: "https://currency-converter-seven-rosy.vercel.app",
   },
   {
     id: 5,
@@ -225,6 +231,4 @@ export const projects = [
     github: "https://github.com/Deepaksahu45/NotesApp.git",
     webapp: "https://notes-app-zeta-lac.vercel.app",
   },
-
-
-];  
+];
