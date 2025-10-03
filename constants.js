@@ -72,7 +72,6 @@ export const SkillsInfo = [
   {
     title: "Backend",
     skills: [
-      { name: "Springboot", logo: springbootLogo },
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
       { name: "MySQL", logo: mysqlLogo },
@@ -85,7 +84,6 @@ export const SkillsInfo = [
     title: "Languages",
     skills: [
       { name: "C", logo: cLogo },
-      { name: "C++", logo: cppLogo },
       { name: "Java", logo: javaLogo },
       { name: "Python", logo: pythonLogo },
       { name: "C-Sharp", logo: csharpLogo },
