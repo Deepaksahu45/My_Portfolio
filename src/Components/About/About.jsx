@@ -1,10 +1,13 @@
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
-import Tilt from "react-parallax-tilt";
+import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+import Tilt from 'react-parallax-tilt';
 
 const About = () => {
   return (
-    <section id="about" className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32">
+    <section
+      id="about"
+      className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
+    >
       <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         {/* Left side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
@@ -20,30 +23,40 @@ const About = () => {
           <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
             <span className="text-black dark:text-white">I am a </span>
             <TypeAnimation
-              sequence={["Frontend Developer", 2000, "Fullstack Developer", 2000, "Web Developer", 2000, "Coder", 2000]}
+              sequence={[
+                'Frontend Developer',
+                2000,
+                'Fullstack Developer',
+                2000,
+                'Web Developer',
+                2000,
+                'Coder',
+                2000,
+              ]}
               speed={50}
               repeat={Infinity}
-              style={{ fontSize: "2rem", fontWeight: "bold" }}
+              style={{ fontSize: '2rem', fontWeight: 'bold' }}
             />
           </h3>
 
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-700 dark:text-gray-300 mb-10 mt-8 leading-relaxed">
-            I’m a dedicated and growth-driven Full-Stack Web Developer, currently specializing in the MERN stack. With a
-            strong foundation in HTML, CSS, JavaScript, and React.js, I’ve built multiple responsive and user-friendly
-            web applications. I’m now expanding my expertise into backend development using Node.js, Express.js, and
-            MongoDB to become a complete full-stack developer.
+            I’m a dedicated and growth-driven Full-Stack Web Developer, currently
+            specializing in the MERN stack. With a strong foundation in HTML, CSS,
+            JavaScript, and React.js, I’ve built multiple responsive and user-friendly web
+            applications. I’m now expanding my expertise into backend development using
+            Node.js, Express.js, and MongoDB to become a complete full-stack developer.
           </p>
 
           {/* Resume button */}
           <a
-            href="https://drive.google.com/file/d/19cxvoaO4ckruGsfe77-0eR9FzDjtXArr/view?usp=sharing"
+            href="https://drive.google.com/file/d/1mj_3z8HlSQLThI2E3-7PH4y40Av-WP6N/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
-              background: "linear-gradient(90deg, #8245ec, #a855f7)",
-              boxShadow: "0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec",
+              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
+              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
             }}
           >
             DOWNLOAD CV
