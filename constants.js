@@ -42,12 +42,13 @@ import oxfLogo from './assets/education_logo/oxford_logo.jpg';
 // Project Section Logo's
 import finance from './assets/work_logo/finance.png';
 
-import noteslogo from './assets/work_logo/noteapp.png';
+// import noteslogo from './assets/work_logo/noteapp.png';
 
 import intellichat from './assets/work_logo/chat.png';
 import ecommerce from './assets/work_logo/e-commerce.png';
 import bagcart from './assets/work_logo/bagcart.png';
 import Customer from './assets/work_logo/Customer.png';
+import Interview from './assets/work_logo/Interview.png';
 
 export const SkillsInfo = [
   {
@@ -154,6 +155,28 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: 'AptaAI - AI Interview Preparation Platform',
+    description:
+      'An AI-powered interview preparation platform that helps candidates prepare smarter using personalized interview strategies, resume analysis, technical and behavioral questions, skill-gap analysis, and AI-generated preparation roadmaps. It also supports AI-optimized resume generation and downloadable interview reports.',
+    image: Interview,
+    tags: [
+      'React JS',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'JWT',
+      'Gemini AI',
+      'Puppeteer',
+      'Tailwind CSS',
+      'Vercel',
+      'Render',
+    ],
+    github:
+      'https://github.com/Deepaksahu45/Apta_ai---Ai-powered-Interview-Preparation-.git',
+    webapp: 'https://apta-ai-ai-powered-interview-prepar.vercel.app/',
+  },
+  {
+    id: 1,
     title: 'Aegis - Customer Support Ticket System',
     description:
       'A full-stack real-time customer support ticketing system that enables users to create, manage, and track support requests efficiently. It features role-based authentication, live status updates using WebSockets, and a scalable backend architecture to handle concurrent requests seamlessly.',
@@ -171,7 +194,7 @@ export const projects = [
     webapp: 'https://customer-support-ticket-system-livid.vercel.app/',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Ai-Personal-Finance-Manager',
     description:
       'A Next.js-based web application that allows users to manage their finances effectively. It provides features like expense tracking, budget planning, and financial goal setting, all within a user-friendly interface.',
@@ -190,7 +213,7 @@ export const projects = [
     webapp: 'https://finaura-zeta.vercel.app',
   },
   {
-    id: 2,
+    id: 3,
     title: 'BagCart - E-commerce Platform',
     description:
       'A full-featured e-commerce web application that supports user authentication, product browsing, cart management, and order processing. Designed with a secure backend and dynamic product handling, ensuring smooth user experience and efficient session management.',
@@ -200,7 +223,7 @@ export const projects = [
     webapp: 'https://e-commerce-bag-shop.onrender.com/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'IntelliChat - AI-Powered Chat Application',
     description:
       'IntelliChat is a cutting-edge AI-powered chat application that provides seamless communication experiences. It leverages advanced natural language processing to deliver intelligent responses and enhance user engagement.',
@@ -210,7 +233,7 @@ export const projects = [
     webapp: 'https://intellichat-ai-sigma.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'ElectroShop e-commerce',
     description:
       'ElectroShop is a responsive React-based e-commerce website offering a wide range of electronics with secure payments, worldwide shipping, smooth user experience, product filtering, and persistent shopping cart functionality',
@@ -218,16 +241,5 @@ export const projects = [
     tags: ['React JS', 'HTML', 'CSS', 'JavaScript'],
     github: 'https://github.com/Deepaksahu45/Electroshop-e-commerce.git',
     webapp: 'https://electroshop-e-commerce.vercel.app',
-  },
-
-  {
-    id: 5,
-    title: 'NotesApp with Firebase',
-    description:
-      'A React-based Notes App integrated with Firebase for real-time data storage and retrieval. Users can create, edit, and delete notes securely, with changes instantly saved to the cloud — perfect for quick personal note-taking on any device.',
-    image: noteslogo,
-    tags: ['React JS', 'API', 'HTML', 'CSS', 'JavaScript', 'Firebase'],
-    github: 'https://github.com/Deepaksahu45/NotesApp.git',
-    webapp: 'https://notes-app-zeta-lac.vercel.app',
   },
 ];
