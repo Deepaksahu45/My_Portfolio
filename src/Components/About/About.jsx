@@ -24,13 +24,15 @@ const About = () => {
             <span className="text-black dark:text-white">I am a </span>
             <TypeAnimation
               sequence={[
-                'Frontend Developer',
-                2000,
                 'Fullstack Developer',
                 2000,
-                'Web Developer',
+                'Software Engineer',
                 2000,
-                'Coder',
+                'Backend Developer',
+                2000,
+                'Frontend Developer',
+                2000,
+                'Programmer',
                 2000,
               ]}
               speed={50}
@@ -41,16 +43,17 @@ const About = () => {
 
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-700 dark:text-gray-300 mb-10 mt-8 leading-relaxed">
-            I’m a dedicated and growth-driven Full-Stack Web Developer, currently
-            specializing in the MERN stack. With a strong foundation in HTML, CSS,
-            JavaScript, and React.js, I’ve built multiple responsive and user-friendly web
-            applications. I’m now expanding my expertise into backend development using
-            Node.js, Express.js, and MongoDB to become a complete full-stack developer.
+            I’m a passionate Full-Stack Web Developer specializing in the MERN stack, with
+            hands-on experience building scalable and responsive web applications.
+            Proficient in React.js, Node.js, Express.js, MongoDB, and modern JavaScript, I
+            enjoy transforming ideas into clean, efficient, and user-friendly solutions.
+            I’m committed to continuous learning and building high-quality software that
+            creates real-world impact.
           </p>
 
           {/* Resume button */}
           <a
-            href="https://drive.google.com/file/d/1d7WL1tulzHVpMlcHwmotC0GJAgeEUUxb/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1d7WL1tulzHVpMlcHwmotC0GJAgeEUUxb/view"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

@@ -24,11 +24,12 @@ import githubLogo from './assets/tech_logo/github.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
 import postmanLogo from './assets/tech_logo/postman.png';
 import mcLogo from './assets/tech_logo/mc.png';
-import figmaLogo from './assets/tech_logo/figma.png';
+// import figmaLogo from './assets/tech_logo/figma.png';
 
 import vercelLogo from './assets/tech_logo/vercel.png';
 import postgreLogo from './assets/tech_logo/postgre.png';
-import csharpLogo from './assets/tech_logo/csharp.png';
+import dockerLogo from './assets/tech_logo/docker.png';
+// import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
 
@@ -80,7 +81,6 @@ export const SkillsInfo = [
       { name: 'C', logo: cLogo },
       { name: 'Java', logo: javaLogo },
       { name: 'Python', logo: pythonLogo },
-      { name: 'C-Sharp', logo: csharpLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'TypeScript', logo: typescriptLogo },
     ],
@@ -94,7 +94,8 @@ export const SkillsInfo = [
       { name: 'Postman', logo: postmanLogo },
       { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
-      { name: 'Figma', logo: figmaLogo },
+      // { name: 'Figma', logo: figmaLogo },
+      { name: 'Docker', logo: dockerLogo },
     ],
   },
 ];
