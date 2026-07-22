@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 const Footers = () => {
   const handleScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -19,11 +19,11 @@ const Footers = () => {
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
           {[
-            { name: "About", id: "about" },
-            { name: "Skills", id: "skills" },
-            { name: "Experience", id: "experience" },
-            { name: "Projects", id: "work" },
-            { name: "Education", id: "education" },
+            { name: 'About', id: 'about' },
+            { name: 'Skills', id: 'skills' },
+            { name: 'Experience', id: 'experience' },
+            { name: 'Projects', id: 'work' },
+            { name: 'Education', id: 'education' },
           ].map((item, index) => (
             <button
               key={index}
@@ -37,7 +37,7 @@ const Footers = () => {
 
         {/* Copyright */}
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-6">
-          © 2025 Deepak Sahu. All rights reserved.
+          © 2026 Deepak Sahu. All rights reserved.
         </p>
       </div>
     </footer>
